@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+body {
+    font-family: 'Archivo Black', sans-serif;
+    color: white;
+    background: #152238;
+    display: flex;
+    flex-direction: column;
+}
+
+.board {
+    border-radius: 25px;
+    background: #192841;
+    margin: 10% 5% 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1c2e4e;
+    width: 20%;
+    padding: 2%;
+    margin: 5%;
+    opacity: 0.9;
+    box-shadow: 0 0 15px white;
+    z-index: 2;
+}
+
+h1, h3 {
+    width: fit-content;
+    opacity: 1;
+}
+
+.subjectContainer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 50%;
+    width: 100%;
+}
+
+.subject{
+    position: absolute;
+    top: 0;
+}
+
+.a{
+    animation: disappearA 15s linear infinite forwards;
+}
+.b{
+    animation: disappearB 15s linear infinite forwards;
+}
+.c{
+    animation: disappearC 15s linear infinite forwards;
+}
+
+.ps {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, darkblue, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+    animation: rainbow 0.75s linear infinite both;
+    align-self: center;
+}
+
+
+@keyframes rainbow {
+
+    0% {
+        background: linear-gradient(to right, orange, yellow, green, blue, darkblue, purple, red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    16% {
+        background: linear-gradient(to right, yellow, green, blue, darkblue, purple, red, orange);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    32% {
+        background: linear-gradient(to right, green, blue, darkblue, purple, red, orange, yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    48% {
+        background: linear-gradient(to right, blue, darkblue, purple, red, orange, yellow, green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    64% {
+        background: linear-gradient(to right, darkblue, purple, red, orange, yellow, green, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    80% {
+        background: linear-gradient(to right, purple, red, orange, yellow, green, blue, darkblue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    100% {
+        background: linear-gradient(to right, red, orange, yellow, green, blue, darkblue, purple);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@keyframes disappearA {
+    0% {
+        opacity: 0;
+    }
+    16% {
+        opacity: 1;
+    }
+    33%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes disappearB {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 0;
+    }
+    49%{
+        opacity: 1;
+    }
+    66%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes disappearC {
+    0% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 0;
+    }
+    82%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
